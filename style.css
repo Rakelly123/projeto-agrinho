@@ -1,115 +1,27 @@
-/* Variáveis de Cores */
-:root {
-    --verde-primario: #2d6a4f;
-    --verde-escuro: #1b4332;
-    --marrom-solo: #6d4c41;
-    --bege-fundo: #f4f7f4;
-    --branco: #ffffff;
-}
-
-/* Configurações Gerais */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bege-fundo);
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Cabeçalho com Imagem */
-header {
-    background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Estilos dos novos botões interativos */
+.filtros {
     text-align: center;
-    color: var(--branco);
-}
-
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 40px;
-    border-radius: 10px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-/* Container Principal */
-.container {
-    max-width: 1100px;
-    margin: -50px auto 50px; /* Sobe um pouco para cima do header */
-    padding: 0 20px;
-}
-
-/* Seções */
-.section {
-    background: var(--branco);
-    padding: 40px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.section-title {
-    color: var(--verde-escuro);
-    border-left: 5px solid var(--verde-primario);
-    padding-left: 15px;
     margin-bottom: 30px;
 }
 
-/* Grid e Cards */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #f9fdf9;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-}
-
-.card h3 {
-    color: var(--marrom-solo);
-    margin-top: 0;
-}
-
-.advantage {
-    border-top: 4px solid var(--verde-primario);
-}
-
-/* Imagem e Texto lado a lado */
-.feature {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-}
-
-.feature-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.feature-img img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
-}
-
-/* Rodapé */
-footer {
-    background: var(--verde-escuro);
+.btn-filtro, .btn {
+    background-color: var(--verde-primario);
     color: white;
-    text-align: center;
-    padding: 30px 0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-filtro:hover, .btn:hover {
+    background-color: var(--verde-escuro);
+}
+
+.btn {
+    background-color: var(--marrom-solo);
+    font-size: 1rem;
+    margin-top: 15px;
 }
