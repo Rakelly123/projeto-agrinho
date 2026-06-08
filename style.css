@@ -1,27 +1,82 @@
-/* Estilos dos novos botões interativos */
-.filtros {
+/* Nova Paleta de Cores Atraente (Verde e Amarelo) */
+:root {
+    --verde-profundo: #132a13;   /* Fundo do rodapé e detalhes fortes */
+    --verde-principal: #31572c;  /* Elementos de destaque e cabeçalhos */
+    --verde-folha: #4f772d;      /* Botões secundários e detalhes visuais */
+    --amarelo-ouro: #ecb100;     /* Cor de destaque principal (botões e links) */
+    --amarelo-suave: #fbf6e2;    /* Fundo leve para os cards */
+    --bege-fundo: #f4f6f0;       /* Fundo geral da página */
+    --branco: #ffffff;
+    --texto-escuro: #212529;
+}
+
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bege-fundo);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+/* Cabeçalho com Imagem */
+header {
+    background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: var(--branco);
+}
+
+.overlay {
+    background: rgba(19, 42, 19, 0.75); /* Filtro em verde profundo escuro */
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 3.2rem;
+    margin: 0 0 10px 0;
+    color: var(--amarelo-ouro); /* Título principal em amarelo */
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1100px;
+    margin: -40px auto 50px;
+    padding: 0 20px;
+}
+
+/* Seções */
+.section {
+    background: var(--branco);
+    padding: 40px;
+    border-radius: 12px;
     margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.btn-filtro, .btn {
-    background-color: var(--verde-primario);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+.section-title {
+    color: var(--verde-principal);
+    border-left: 6px solid var(--amarelo-ouro); /* Detalhe em amarelo na borda */
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
 }
 
-.btn-filtro:hover, .btn:hover {
-    background-color: var(--verde-escuro);
-}
-
-.btn {
-    background-color: var(--marrom-solo);
-    font-size: 1rem;
-    margin-top: 15px;
-}
+/* Grid e Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2
